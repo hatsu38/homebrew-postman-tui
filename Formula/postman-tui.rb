@@ -5,29 +5,29 @@
 class PostmanTui < Formula
   desc "Simple HTTP Request TUI Tool!"
   homepage "https://github.com/hatsu38/postman-tui"
-  version "0.0.5"
+  version "1.0.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hatsu38/postman-tui/releases/download/v0.0.5/postman-tui_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "1a84a34044d8a2dca6e7803944ede85abe3780677f6ab151756267279f823fee"
+      url "https://github.com/hatsu38/postman-tui/releases/download/v1.0.0/postman-tui_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "d1f651a9511a2a110e38c5ebe711366024a7c3dae0c00b0683c4ca81a4e93135"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hatsu38/postman-tui/releases/download/v0.0.5/postman-tui_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "43e1c478e75e46b7dd46425d3115b2fabe4c19b7cb7c6fc6a6e8f961d2815bb8"
+      url "https://github.com/hatsu38/postman-tui/releases/download/v1.0.0/postman-tui_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "0fdc13e483ea334d50e5dca68040ead7913546b9ab66e06e4d5b6144c462c214"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hatsu38/postman-tui/releases/download/v0.0.5/postman-tui_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "f690aaad88f1e6dee1e11da569d8d89ecf5bca37c252c7154542df1d04a949e7"
+      url "https://github.com/hatsu38/postman-tui/releases/download/v1.0.0/postman-tui_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "0dfb95248e5685209784c60b69b4124f65ffdf2c146cab38618cb076d3e98a14"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hatsu38/postman-tui/releases/download/v0.0.5/postman-tui_0.0.5_Linux_arm64.tar.gz"
-      sha256 "cad5f4f10ff6be4c308f285c7f718dceb653bd4ffee6a1d33724f9e2b5551f6c"
+      url "https://github.com/hatsu38/postman-tui/releases/download/v1.0.0/postman-tui_1.0.0_Linux_arm64.tar.gz"
+      sha256 "6664e4dd49b1d035a1a66e81600965abb05813c013905a8b5eff5723adb072fa"
     end
   end
 
